@@ -1,4 +1,4 @@
-
+# Функция возвращает n чисел Фибоначчи, принимает на вход n
 def fibonacci(n):
     fib1 = fib2 = 1
     fib_list = []
@@ -9,6 +9,7 @@ def fibonacci(n):
     return fib_list
 
 
+# Функция алгоритма сортировки пузырьком, принимает на вход список чисел
 def sort(a):
     for i in range(len(a) - 1):
         for j in range(len(a) - i - 1):
@@ -17,12 +18,13 @@ def sort(a):
     return a
 
 
-def calculator(a, b, sign):
-    if (sign == "+"):
-        return a+b
-    elif (sign == "-"):
-        return a-b
-    elif (sign == "*"):
-        return a*b
-    elif (sign == "/"):
-        return a/b
+# Функция калькулятора, принимает на вход 3 аргумента: 2 числа и знак действия: +, -, *, /
+def calculator(a, b, sgn):
+    if (sgn == "+"):
+        return a + b
+    elif (sgn == "-"):
+        return a - b
+    elif (sgn == "*"):
+        return a * b
+    elif (sgn == "/"):
+        return a / b

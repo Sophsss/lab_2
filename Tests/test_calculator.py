@@ -1,21 +1,25 @@
 import my_lib
 import pytest
 
-
+# Тест функции, вычисляющий значение выражений
 class TestCalculator:
-
+    # Тест операции сложения на корректных данных
     def test_add_on_correct(self):
-        assert my_lib.calculator(51, 27, "+") == 78
+        assert my_lib.calculator(100, 21, "+") == 120
 
+    # Тест операции вычитания на корректных данных
     def test_subtract_on_correct(self):
-        assert my_lib.calculator(25, 11, "-") == 14
+        assert my_lib.calculator(30, 12, "-") == 18
 
+    # Тест операции умножения на корректных данных
     def test_multiply_on_correct(self):
-        assert my_lib.calculator(5, 6, "*") == 30
+        assert my_lib.calculator(6, 6, "*") == 36
 
+    # Тест операции деления на корректных данных
     def test_divide_on_correct(self):
-        assert my_lib.calculator(5, 1, "/") == 5
+        assert my_lib.calculator(10, 5, "/") == 2
 
+    # Тест операции деления на некорректных данных, выхываем исключение
     def test_dived_on_zero(self):
         with pytest.raises(ZeroDivisionError):
-            my_lib.calculator(5, 0, "/")
+            my_lib.calculator(10, 0, "/")
