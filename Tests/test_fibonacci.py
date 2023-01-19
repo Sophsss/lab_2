@@ -6,7 +6,7 @@ import pytest
 class TestFibonacci:
     # Тест программы на корректных данных
     def test_on_correct_n(self):
-        assert my_lib.fibonacci(7) == [1, 1, 2, 3, 5, 8, 12]
+        assert my_lib.fibonacci(7) == [1, 1, 2, 3, 5, 8, 13]
 
     # Тест программы на некорректных данных
     def test_on_incorrect(self):

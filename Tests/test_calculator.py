@@ -5,7 +5,7 @@ import pytest
 class TestCalculator:
     # Тест операции сложения на корректных данных
     def test_add_on_correct(self):
-        assert my_lib.calculator(100, 21, "+") == 120
+        assert my_lib.calculator(100, 21, "+") == 121
 
     # Тест операции вычитания на корректных данных
     def test_subtract_on_correct(self):
