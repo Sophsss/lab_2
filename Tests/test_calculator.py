@@ -1,4 +1,4 @@
-import my_lib
+from src import my_lib
 import pytest
 
 # Тест функции, вычисляющий значение выражений

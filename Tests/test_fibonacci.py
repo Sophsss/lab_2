@@ -1,5 +1,4 @@
-import my_lib
-import pytest
+from src import my_lib
 
 
 # Тест функции, находящей последовательность фибоначчи
